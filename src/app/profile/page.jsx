@@ -1,9 +1,30 @@
+"use client"
+import axios from 'axios'
+import Link from "next/link";
+import { useRouter } from 'next/navigation';
 export default function ProfilePage() {
+    const router = useRouter();
+    const logout = async () => {
+        try {
+            await axios.get('api/users/logout')
+            router.push('/login')
+            // add toast success
+        } catch (error) {
+            console.log(error.message);
+            // add toast
+        }
+    }
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            <h1>Profile</h1>
-            <hr />
-            <p>Profile Page</p>
+        <div className="p-12 flex items-center justify-center min-h-screen bg-gradient-to-r from-indigo-100 to-indigo-500">
+            <div className="p-8 flex flex-col bg-white text-gray-500 text-2xl border border-gray-300 rounded-lg focus:outline-none focus:border-gray-600 shadow-2xl">
+                <h1>Profile</h1>
+                <hr />
+                <p>Profile Page</p>
+                <hr />
+                <button className="p-2 mb-1 border rounded-lg text-white bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-300 ..."
+                    onClick={logout}>
+                    Logout </button>
+            </div>
         </div>
     )
 }

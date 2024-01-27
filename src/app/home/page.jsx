@@ -1,8 +1,9 @@
 "use client"
 
 import Layout from '../components/Layout';
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image';
+//import Navbar from '../components/Navbar';
 export default function HomePage() {
 
 
@@ -13,8 +14,9 @@ export default function HomePage() {
         border: 'solid 3px'
     };
     return (
-        <Layout>
 
+
+        <Layout>
             <div className="p-12 flex items-center justify-center min-h-screen bg-gradient-to-r from-indigo-100 to-indigo-500">
                 <div className="p-8 flex flex-col bg-white bg-opacity-50 text-slate-950 text-2xl border border-gray-300 rounded-lg focus:outline-none focus:border-gray-600 shadow-2xl">
                     <h1 className='flex flex-col justify-center items-center'>Full Stack Web Developer</h1>
@@ -38,5 +40,6 @@ export default function HomePage() {
                 </div>
             </div>
         </Layout>
+
     );
 }

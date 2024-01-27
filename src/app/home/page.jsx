@@ -1,9 +1,11 @@
 "use client"
-//import Navbar from '../components/Navbar';
+
 import Layout from '../components/Layout';
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image';
 export default function HomePage() {
+
+
     const avatarStyle = {
         width: '13rem',
         borderRadius: '50%',
@@ -27,7 +29,7 @@ export default function HomePage() {
                     </div>
 
                     <div className="container d-flex align-items-center flex-column">
-                        <p>Hi, I am Raphael! I am currently transitioning from a Quality Control Technician to a Full Stack Web Developer! I studied Full Stack Coding through UCSD's Extended Studies Program. I am still fairly new at coding, but I believe with my professional work experience and previous Quality experience; I can make an impact in any company I work for. I love learning and problem-solving very much. I work really well with others and consider my self a really good teammate because of my communication skills and personality </p>
+                        <p>Hi, I am Raphael! I am currently transitioning from a Quality Control Technician to a Full Stack Web Developer! I studied Full Stack Coding through UCSD Extended Studies Program. I am still fairly new at coding, but I believe with my professional work experience and previous Quality experience; I can make an impact in any company I work for. I love learning and problem-solving very much. I work really well with others and consider my self a really good teammate because of my communication skills and personality </p>
                         <br />
                         <p>Through this bootcamp, I learned the MERN stack! It is difficult but very rewarding. I know this will further my advancement in my career goals and will definitely continue to improve in the future</p>
                         <br />

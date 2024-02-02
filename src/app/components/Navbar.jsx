@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 const Navbar = () => {
 
     return (
@@ -13,6 +12,8 @@ const Navbar = () => {
                         <Link href="/login">Login</Link>
 
                         <Link href="/signup">Sign-up</Link>
+
+                        <Link href='/tictactoe'>Tic-Tac-Toe</Link>
                     </div>
                 </div>
             </div>

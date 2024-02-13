@@ -32,7 +32,7 @@ export default function UserProfile({ params }) {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
+        <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-gradient-to-r from-indigo-100 to-indigo-500">
             {userData ? (
                 <>
                     <h1 className="text-4xl">Profile</h1>
